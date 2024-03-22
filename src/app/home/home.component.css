@@ -1,0 +1,32 @@
+.center-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh; 
+  }
+
+.fixed-size {
+width: 300px; 
+height: auto; 
+}
+
+.intro{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+
+.title{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.slogan{
+    font-size: 25px;
+    color: white;
+}
+
+.btn-warning{
+    font-weight: bold;
+}
