@@ -1,0 +1,39 @@
+
+<div class="container d-flex justify-content-center my-4 mb-5">
+    <div id="mobile-box">
+        <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img class="card-img-top" src="{{albums.images[0].url}}"
+                alt="Card image cap">
+                <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-body text-center">
+                <h5 class="h5 font-weight-bold"><a href="#" target="_blank">{{albums.name}}</a></h5>
+                <p class="mb-0">{{albums.label}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-xl-12" *ngFor="let track of albums.tracks">
+    <div class="media-boxes">
+      <div class="media">
+        <div class="media-body tm-bg-gray">
+          <div class="tm-description-box">
+                <h4>{{track.name}}</h4>
+                <a href="{{track.preview_url}}">Preview Song</a>
+          </div>
+       <!--  <div class="tm-buy-box">
+            <a href="#" class="tm-bg-blue tm-text-white tm-buy"></a>
+            <span class="tm-text-blue tm-price-tag">$5.50</span>
+          </div>--> 
+        </div>
+      </div>
+    </div> <!-- media-boxes -->
+  </div>
+

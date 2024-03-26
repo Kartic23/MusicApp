@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { SongsComponent } from './songs/songs.component';
+import { ArtistComponent } from './artist/artist.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 
 const routes: Routes = [
-  {path: '',  component: HomeComponent, pathMatch: 'full'},
-  {path: 'songs',  component: SongsComponent},
+  {path: '',  component: SongsComponent, pathMatch: 'full'},
+  {path: 'artist/:id',  component: ArtistComponent},
+  {path: 'album/:id',  component: AlbumsComponent},
 
 ];
 
